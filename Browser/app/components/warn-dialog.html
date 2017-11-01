@@ -1,0 +1,18 @@
+<div class="dialogBox" ng-controller="cusCtrl">
+    <div class="tips-icon">
+        <i ng-class="events.iconClass"></i>
+    </div>
+    <p class="content-text">
+        <!--{{events.content}}-->
+        修改
+    </p>
+    <input type="text" ng-model="events.content" ng-change="events.back()"/>
+    <input type="text" ng-model="events.tid"/>
+    <input type="text" ng-model="events.uname"/>
+    <div>{{n.userId}}</div>
+    <ul ng-model="events"  ng-repeat="a in cusList">
+        <input type="text" value="{{a.userId}}"/>
+    </ul>
+    <span ng-bind='n.name'></span>
+</div>
+

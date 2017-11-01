@@ -1,0 +1,101 @@
+.dialog-main {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+.dialog-main .close-button {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 16px;
+  top: 8px;
+  font-style: normal;
+  font-size: 15px;
+  color: #fff;
+  opacity: .5;
+  cursor: pointer;
+  background: #D34543;
+}
+.dialog-main .close-button:hover {
+  opacity: 1;
+}
+.dialog-main .dialog-box {
+  min-width: 369px;
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.dialog-main p.tips {
+  text-align: center;
+  font-size: 18px;
+  color: #3594C3;
+  margin: 23px 0 34px;
+}
+.dialog-main table.dialog-table {
+  width: 70%;
+  margin: 0 auto;
+}
+.dialog-main table.dialog-table tr {
+  display: block;
+  margin-bottom: 20px;
+}
+.dialog-main table.dialog-table td {
+  width: 160px;
+  text-align: left;
+  position: relative;
+}
+.dialog-main table.dialog-table td input,
+.dialog-main table.dialog-table td .dropdown-main,
+.dialog-main table.dialog-table td select {
+  width: inherit;
+  height: 30px;
+}
+.dialog-main table.dialog-table td textarea {
+  width: inherit;
+}
+.dialog-main table.dialog-table td:first-child {
+  width: 76px;
+}
+.dialog-main .dialog-button-box {
+  text-align: center;
+}
+.dialog-main .dialog-button-box button {
+  width: 80px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 25px;
+  border: 1px solid #D8D8D8;
+  color: #333;
+  margin: 0 5px 20px;
+  border-radius: 0;
+}
+.dialog-main .dialog-button-box button.button0 {
+  border-width: 0;
+  background: #01C5DA;
+  color: white;
+}
+.dialogBox{
+  display:flex;
+  flex-flow: column;
+  padding:10px;
+}
+.dialogBox input{
+  margin:5px;
+  border: 1px solid #f60;
+  padding: 6px;
+  border-radius: 6px;
+  opacity:.6;
+}

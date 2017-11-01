@@ -1,0 +1,60 @@
+table th {
+    /*width: 86px;*/
+    padding: 5px 10px;
+}
+
+table .tId {
+    width: 26px;
+    padding: 5px;
+}
+
+table .comfort {
+    width: 130px;
+}
+
+table td {
+    text-align: center;
+    padding: 5px;
+}
+/* 标题背景色 */
+.headCls {
+    background-color: #ccc;
+}
+
+/* 偶数行背景色 */
+.tr_even {
+    background-color: #FFA9AF!important;
+}
+
+/* 奇数行背景色 */
+.tr_odd {
+    background-color: #92F3A3!important;
+}
+
+/* 鼠标悬停上的背景色 */
+.tr_hover {
+    background-color: #ffffcc
+}
+.title{
+    font-size:26px;
+    color:#db5031;
+    padding-bottom:20px;
+    text-align: center;
+}
+.operation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:7px 39px;
+}
+.operation .opUp{
+    font-size: 16px;
+    color:#4CD34C;
+    cursor:pointer;
+}
+.operation .del{
+    font-size: 18px;
+    color:#db5031;
+    cursor:pointer;
+}
+

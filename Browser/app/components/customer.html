@@ -1,0 +1,42 @@
+<div class="ck" ng-controller="cusCtrl">
+    <div class="title">乘客信息</div>
+    <table id="tab" border="1px" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr class="headCls">
+            <th  class="tId">ID</th>
+            <th>昵称</th>
+            <th>用户名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>用户密码</th>
+            <th>手机号</th>
+            <th>邮箱</th>
+            <th>地址</th>
+            <th>会员等级</th>
+            <th colspan="2"  class="comfort">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="n in cusList">
+            <td>{{n.userId}}</td>
+            <td>{{n.userAccount}}</td>
+            <td id = "name">{{n.name}}</td>
+            <td>{{n.userAge}}</td>
+            <td>{{n.sex}}</td>
+            <td>{{n.passWord}}</td>
+            <td>{{n.phone}}</td>
+            <td>{{n.email}}</td>
+            <td>{{n.address}}</td>
+            <td>{{n.vip}}</td>
+            <dialog load-data="data"></dialog>
+            <td colspan="2" class="operation">
+                <i class="iconfont icon-iconmodify opUp" ng-click="data.isShow=!data.isShow"></i>
+                <i class="iconfont icon-shanchu del"></i>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+</div>

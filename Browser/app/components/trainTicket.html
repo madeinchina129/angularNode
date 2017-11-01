@@ -1,0 +1,45 @@
+<div class="ck" ng-controller="trainCtrl">
+    <div class="title">火车票信息</div>
+    <table id="tab" border="1px" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr class="headCls">
+                <th  class="tId">ID</th>
+                <th>发车地址</th>
+                <th>终点地址</th>
+                <th>起始站点</th>
+                <th>终止站点</th>
+                <th>车次</th>
+                <th>票价</th>
+                <th>发车时间</th>
+                <th>到达时间</th>
+                <th>总时间</th>
+                <th>座位(有/无)</th>
+                <th>舒适度</th>
+                <th colspan="2"  class="comfort">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="n in trainList">
+                <td>{{n.Id}}</td>
+                <td>{{n.address1}}</td>
+                <td>{{n.address2}}</td>
+                <td>{{n.StartStation}}</td>
+                <td>{{n.EndStation}}</td>
+                <td>{{n.trainNum}}</td>
+                <td>{{n.price}}</td>
+                <td>{{n.StartTime}}</td>
+                <td>{{n.EndTime}}</td>
+                <td>{{n.TotalTime}}</td>
+                <td>{{n.seat}}</td>
+                <td>{{n.comfort}}</td>
+                <dialog load-data="data"></dialog>
+                <td colspan="2" class="operation">
+                    <i class="iconfont icon-iconmodify opUp" ng-click="data.isShow=!data.isShow"></i>
+                    <i class="iconfont icon-shanchu del"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

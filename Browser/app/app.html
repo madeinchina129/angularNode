@@ -1,0 +1,51 @@
+<header>
+    <div class="headLeft">
+        <div class="logo">
+            <span>ctrip</span>
+        </div>
+    </div>
+    <div class="headCon">
+        <span>后台管理</span>
+    </div>
+    <div class="headRight">
+        <div class="headRightWid">
+            <span>widgets</span>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="con">
+        <div class="silderLeft">
+            <ul class="siList">
+                <li ng-class="{ active:'customer'== currentType }">
+                    <a ui-sref="app.customer" ng-click="changeTab('customer')"><i class="iconfont icon-car"></i>乘客</a>
+                </li>
+                <li class="order" ng-class="{ active:'order'== currentType }">
+                    <a ng-click="changeTabList()"><i class="iconfont icon-dingdan"></i>订单</a>
+
+                </li>
+                <ul class="orderInfoList" ng-show='menuState.show'>
+                    <li id="trainOrderInfo" ng-class="{ active:'trainOrderInfo'== currentType }">
+                        <a ui-sref="app.trainOrderInfo" ng-click="changeTab('trainOrderInfo')"><i
+                                class="iconfont icon-huochepiao"></i>火车订单信息</a>
+                    </li>
+                    <li ng-class="{ active:'airOrderInfo'== currentType }">
+                        <a ui-sref="app.airOrderInfo" ng-click="changeTab('airOrderInfo')"><i
+                                class="iconfont icon-jipiao"></i>飞机订单信息</a>
+                    </li>
+                </ul>
+                <li ng-class="{ active:'trainTicket'== currentType }">
+                    <a ui-sref="app.trainTicket" ng-click="changeTab('trainTicket')"><i
+                            class="iconfont icon-huochepiaoxueshengyouhuiqiabanli"></i>火车票</a>
+                </li>
+                <li ng-class="{ active:'airTicket'== currentType }">
+                    <a ui-sref="app.airTicket" ng-click="changeTab('airTicket')"><i class="iconfont icon-jipiao1"></i>飞机票</a>
+                </li>
+
+            </ul>
+        </div>
+        <div ui-view class="container"></div>
+    </div>
+</section>
+
+
